@@ -1,6 +1,6 @@
 
 // Yalnizca secili p etiketine basilinca gizleme islemi gerceklesir -> this ifadesi
-$(document).ready(function () {
+$(function () {
     $("p").click(function () {
         $(this).hide();
     });
