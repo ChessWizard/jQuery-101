@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY | Lesson 1</title>
+    <!--<script src="jquery_lib/jquery-3.6.1.min.js"></script> -> Yerlesik kutuphane -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><!--CDN ile-->
+</head>
+<body>
+
+    <p>DENEME YAZISI - 1</p>
+    <p>DENEME YAZISI - 2</p>
+    <p>DENEME YAZISI - 3</p>
+
+    <div>BU BİR DIV ETIKETIDIR - 1</div>
+    <div>BU BİR DIV ETIKETIDIR - 2</div>
+    <div>BU BİR DIV ETIKETIDIR - 3</div>
+    
+    <script>
+
+        // Yalnizca secili p etiketine basilinca gizleme islemi gerceklesir -> this ifadesi
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+
+            // Herhangi bir div'e tiklanirsa hepsi gizlenir
+            $("div").click(function(){
+                $("div").hide();
+            });
+
+        });
+
+        
+
+
+    </script>
+    
+</body>
+</html>
