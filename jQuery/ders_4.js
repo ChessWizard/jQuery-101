@@ -1,5 +1,5 @@
 $(function () {
-
+   
     // butona tiklaninca tabloya satir ve veri eklemek
     var text = "new data";
     $("#addRow").click(function () {
@@ -69,6 +69,7 @@ $(function () {
     // ornegin her yazma durumunda bir islem yapilacaksa/kontrol edilecekse
     // ör: her yazilan 3 karakteri "." 'ya ceviren uygulama
 
+    debugger;
     // input icerisine girilen verinin uzunlugu alindi
     var textLen = $("#txt").val().length;
     var dotCounter = "";
@@ -78,7 +79,7 @@ $(function () {
             $("#txt").html(dotCounter);
         }
     });
-
+    
     // coklu event islemleri -> on() metodu
 
 });
