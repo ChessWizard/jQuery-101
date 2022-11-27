@@ -7,6 +7,8 @@
     <title>JQUERY | Lesson 1</title>
     <!--<script src="jquery_lib/jquery-3.6.1.min.js"></script> -> Yerlesik kutuphane -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><!--CDN ile-->
+    <!--External JS-->
+    <script type="text/javascript" src="../jQuery/ders_1.js"></script>
 </head>
 <body>
 
@@ -17,26 +19,6 @@
     <div>BU BİR DIV ETIKETIDIR - 1</div>
     <div>BU BİR DIV ETIKETIDIR - 2</div>
     <div>BU BİR DIV ETIKETIDIR - 3</div>
-    
-    <script>
-
-        // Yalnizca secili p etiketine basilinca gizleme islemi gerceklesir -> this ifadesi
-        $(document).ready(function(){
-            $("p").click(function(){
-                $(this).hide();
-            });
-
-            // Herhangi bir div'e tiklanirsa hepsi gizlenir
-            $("div").click(function(){
-                $("div").hide();
-            });
-
-        });
-
-        
-
-
-    </script>
-    
+   
 </body>
 </html>

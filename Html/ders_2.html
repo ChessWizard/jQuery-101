@@ -1,50 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><!--CDN ile-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQUERY | Lesson 2</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><!--CDN ile-->
 
+    <script src="../jQuery/ders_2.js"></script>
 </head>
 <body>
     
-    <script>
-        $(function(){
-            
-            // h2 etiketlerinden tiklananin gizlenmesi
-            $("h2").click(function(){
-                $(this).hide();
-            });
-
-            // butona tiklaninca class degeri p-1 olan p etiketlerinin gizlenmesi
-            $("#btn-1").click(function(){
-                $(".p-1").hide();
-            });
-
-            // btn-2 ye tiklaninca tum HTML elementleri gizlensin
-            $("#btn-2").click(function(){
-                $("*").hide();
-            });
-
-            // yalnizca paragraflardan class degeri result olan paragraf gizlenir
-            $("#btn-3").click(function(){
-                $("p.result").hide();// p'ler secildi, p'lerin icerisinden result class'ina ait olana filtrelendi
-            });
-
-            // ilk ul listesinin ilk li'sini gizlemek
-            $("#btn-4").click(function(){
-                $("ul li:first").hide();
-            });
-
-            // tum ul listelerinin ilk li'lerini gizlemek
-            $("#btn-5").click(function(){
-                $("ul li:first-child").hide();
-            });
-        });
-    </script>
-
     <h2>Başlık - 1</h2>
     <h2>Başlık - 2</h2>
     <h2>Başlık - 3</h2>
