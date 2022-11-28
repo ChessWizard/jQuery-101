@@ -20,4 +20,13 @@ $(function () {
         $(this).css("background-color", "darkred");
     });
 
+    // mouse'un element uzerinde hareket ederkenki durumlarin kontrolu
+    // her harekette dikdoretgenin rengi degissin
+    var counter = 0;
+    $("#rectangle").mousemove(function () {
+        $("#rectangle").css("background-color", "blue");
+        $("#rectangle").css("color", "white");
+        $("#rectangle").text(counter++);
+    });
+
 });
