@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY | Lesson 10</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../jQuery/ders_10.js"></script>
+    <!--Emoji picker cikartmak icin gerekli script, tinymce ve jquery-->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/jquery.tinymce.min.js" referrerpolicy="origin"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+
+        <button id="showBtn" class="btn btn-success">Show!</button>
+        <button id="hideBtn" class="btn btn-danger">Hide!</button>
+    </div>
+    <br />
+    <div class="container">
+        <p class="exampleP">JQUERY | Lesson 10</p>
+        <p class="exampleP">JQUERY | Lesson 10</p>
+        <p class="exampleP">JQUERY | Lesson 10</p>
+        <p class="exampleP">JQUERY | Lesson 10</p>
+        <p class="exampleP">JQUERY | Lesson 10</p>
+
+        <button id="showSlowlyBtn" class="btn btn-success">Show Slowly!</button>
+        <button id="hideSlowlyBtn" class="btn btn-danger">Hide Slowly!</button>
+        <button id="hideFastBtn" class="btn btn-danger">Hide Fast!</button>
+        <button id="showFastBtn" class="btn btn-success">Show Fast!</button>
+        <button id="hideSecondBtn" class="btn btn-danger">Hide in 3 seconds!</button>
+        <button id="showSecondBtn" class="btn btn-success">Show in 5 seconds!</button>
+        <button id="toggleBtn" class="btn btn-info">Let's Toggle!</button>
+    </div>
+    <br />
+    <div class="youtubeComments container" style="width:auto;height:300px; background-color:#121212;">
+        <div class="row">
+            <div class="col">
+                <textarea id="commentArea" class="md-textarea form-control" placeholder="Yorum ekleyin..." style="margin-top:100px"></textarea>
+            </div>
+        </div><br />
+        <div class="row hide">
+            <div class="col">
+                <input id="emojiBtn" type="image" src="../images/emoji-logo.png" style="width:50px;height:50px;" />
+                <div class="d-flex justify-content-end ">
+                    <button class="btn btn-danger d-flex justify-content-end" id="cancelBtn" style="margin-right:20px;">İptal</button>
+                    <button class="btn btn-success d-flex justify-content-end" id="doCommentBtn">Yorum Yap</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
