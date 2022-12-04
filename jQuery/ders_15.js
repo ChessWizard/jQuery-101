@@ -55,7 +55,7 @@ $(function () {
             // Index olarak secilenler arasindan kacinci oldugu yazdirilir
             // 1 tane secildigi icin 0. index'e denk gelir!
             return "Old Text: " + oldText + " New Text: <b>This a New!!</b> -> " + (index + 1) + ". paragraph!";
-        })
+        });
     });
 
 
