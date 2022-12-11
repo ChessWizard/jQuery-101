@@ -53,16 +53,17 @@ $(function () {
     // Bir tarihin yaziminda araya "." yerine "/" yazdirilsin
     // ayrica formati da yil-ay-gun seklinde olsun -> ISO Standarti
     $("#changeDateFormat").click(function () {
+        debugger;
         var date = $("#dateS").text();
         var formattedDate = "";
+        var dateSpan = $("#dateS");
 
-        if (date != '') {
+        if (date != '' && dateSpan.text().includes(".")) {
             // "/" olarak degistirildi "." lar
             var dateElements = date.split(".");
             formattedDate = dateElements[2] + "/" + dateElements[1] + "/" + dateElements[0];
-
             // Son olarak yeni formatlanan ifade span uzerinde goruntulensin
-            $("#dateS").text(formattedDate);
+            dateSpan.text(formattedDate);
         }
     });
 });
