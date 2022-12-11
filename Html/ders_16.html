@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY | Lesson 16</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../jQuery/ders_16.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <p>Adding Element With jQuery</p>
+    <p>Adding Element With jQuery</p>
+
+    <ol id="list">
+        <li>C</li>
+        <li>C++</li>
+        <li>C#</li>
+    </ol>
+
+    Append List:<input type="text" id="appendList" style="margin-right:10px;"/><button id="addList" class="btn btn-danger">Add Element</button>
+    
+    <br /><br />
+
+    <button id="btn-1" class="btn btn-success">Append Text</button>
+    <button id="btn-2" class="btn btn-success">Append List</button>
+    <button id="btn-3" class="btn btn-success">Prepend Text</button>
+    <button id="btn-4" class="btn btn-success">Prepend List</button>
+    <button id="btn-5" class="btn btn-success" onclick="appendText()" ondblclick="appendText()">Append Text</button>
+    <button id="btn-6" class="btn btn-success">Insert Before</button>
+    <button id="btn-7" class="btn btn-success">Insert After</button>
+    <button id="btn-8" class="btn btn-success" onclick="afterText()">Insert After Function
+    </button>
+
+    <p id="emptyP"></p>
+
+</body>
+</html>
